@@ -327,7 +327,7 @@
                     <th style="width:14%;">Matin (UI)</th>
                     <th style="width:17.66666666666667%;">Midi (UI)</th>
                     <th style="width:18.66666666666667%;">Collation (UI)</th>
-                    <th style="width:20%;">Soir (UI)</th>
+                    <th style="width:19.6%;">Soir (UI)</th>
                     <th>Autre (UI)</th>
                 </tr>
             </thead>
@@ -826,12 +826,12 @@
         <table>
                     
                         <tr>
-                            <td style="text-align: center;"><strong>Etapes</strong></td>
-                            <td style="text-align: center;"><strong>Date</strong></td>
-                            <td style="text-align: center;"><strong>Date</strong></td>
-                            <td style="text-align: center;"><strong>Date</strong></td>
-                            <td style="text-align: center;"><strong>Date</strong></td>
-                            <td style="text-align: center;"><strong>Commentaire</strong></td>
+                            <td style="text-align: center; "><strong>Etapes</strong></td>
+                            <td style="text-align: center; width: 60px;"><strong>Date</strong></td>
+                            <td style="text-align: center; width: 60px;"><strong>Date</strong></td>
+                            <td style="text-align: center; width: 60px;"><strong>Date</strong></td>
+                            <td style="text-align: center; width: 60px;"><strong>Date</strong></td>
+                            <td style="text-align: center; width: 100px;"><strong>Commentaire</strong></td>
                         </tr>
                     
                     <tbody>
@@ -933,9 +933,9 @@
                 <table>
                     
                         <tr>
-                            <td style="text-align: center;"></td>
-                            <td style="text-align: center;">OUI / NON</td>
-                            <td style="text-align: center;"><strong>Observation</strong></td>                            
+                            <td style="text-align: center; width: 400px;"></td>
+                            <td style="text-align: center; width: 80px;">OUI / NON</td>
+                            <td style="text-align: center; width: 190px;"><strong>Observation</strong></td>                            
                         </tr>
                     
                     
@@ -1013,9 +1013,9 @@
                 <table>
                     
                         <tr>
-                            <td></td>
-                            <td style="text-align: center;"><strong>Détails</strong></td>
-                            <td style="text-align: center;"><strong>Observations</strong></td>                            
+                            <td style="width: 400px;"></td>
+                            <td style="text-align: center; width: 130px;"><strong>Détails</strong></td>
+                            <td style="text-align: center; width: 140px;"><strong>Observations</strong></td>                            
                         </tr>
                     
                     <tbody>                      
@@ -1048,9 +1048,9 @@
                 <table>
                    
                         <tr>
-                            <td style="text-align: center;"></td>
-                            <td style="text-align: center;"><strong>Prescription</strong></td>
-                            <td style="text-align: center;"><strong>Réalisation réelle</strong></td>                            
+                            <td style="text-align: center; width: 400px;"></td>
+                            <td style="text-align: center; width: 130px;"><strong>Prescription</strong></td>
+                            <td style="text-align: center; width: 140px;"><strong>Réalisation réelle</strong></td>                            
                         </tr>
                    
                     <tbody>                      
