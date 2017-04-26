@@ -31,8 +31,10 @@
             <h4><u>RENSEIGNEMENTS PATIENT</u></h4>
             <strong>Nom :</strong> <?php echo $_POST["nompatient"] ; ?>  <br/>
             <strong>Prénom :</strong><?php echo $_POST["prenompatient"] ; ?><br/>
-            <strong>Né(e) le : </strong><?php echo $_POST["datenaissance"] ; ?> &nbsp;&nbsp;&nbsp;&nbsp; <strong>Age :</strong> <?php echo $_POST["agepatient"] ; ?><br/>
-            <strong>Tel : </strong> <?php echo $_POST["telpatient"] ; ?>  &nbsp;&nbsp;&nbsp;&nbsp; <strong>Mobile :</strong><?php echo $_POST["mobilepatient"] ; ?><br/>
+            <strong>Né(e) le : </strong><?php echo $_POST["datenaissance"] ; ?> <br/>
+            <strong>Age :</strong> <?php echo $_POST["agepatient"] ; ?><br/>
+            <strong>Tel : </strong> <?php echo $_POST["telpatient"] ; ?><br/>
+            <strong>Mobile :</strong><?php echo $_POST["mobilepatient"] ; ?><br/>
             <strong>Adresse :</strong><?php echo $_POST["adressepatient"] ; ?><br/>
             <strong>Code postal :</strong><?php echo $_POST["codepostalpatient"] ; ?><br/>    
             <strong>Ville :</strong><?php echo $_POST["villepatient"] ; ?><br/>
@@ -44,22 +46,30 @@
                <strong>Service :</strong> <?php echo $_POST["serviceep"] ; ?> <br/><br/> 
 
             <h4><u>Diabétologue prescripteur :</u></h4> <?php echo $_POST["diabetologueprescripteur"] ; ?>
-            <strong>Tel :</strong> <?php echo $_POST["teldp"] ; ?>      <strong>Mobile :</strong>  <?php echo $_POST["mobiledp"] ; ?>     <strong> Ville :</strong><?php echo $_POST["villedp"] ; ?><br/>
+            <strong>Tel :</strong> <?php echo $_POST["teldp"] ; ?><br/>
+            <strong>Mobile :</strong>  <?php echo $_POST["mobiledp"] ; ?><br/>     
+            <strong>Ville :</strong><?php echo $_POST["villedp"] ; ?><br/>
             <strong>Mail :</strong><?php echo $_POST["maildp"] ; ?><br/><br/>
 
             <h4><u>Diabétologue libéral :</u></h4>
-            <strong>Tel :</strong>  <?php echo $_POST["teldl"] ; ?>   <strong> Mobile :</strong>   <?php echo $_POST["mobiledl"] ; ?>     <strong>Ville :</strong><?php echo $_POST["villedl"] ; ?><br/>
+            <strong>Tel :</strong>  <?php echo $_POST["teldl"] ; ?><br/>   
+            <strong>Mobile :</strong>   <?php echo $_POST["mobiledl"] ; ?><br/>     
+            <strong>Ville :</strong><?php echo $_POST["villedl"] ; ?><br/>
             <strong>Mail :</strong> <?php echo $_POST["maildl"] ; ?> <br/><br/>
 
             <h4><u> Médecin traitant :</u></h4>
-            <strong>Tel :</strong>  <?php echo $_POST["telmt"] ; ?>   <strong>Mobile :</strong>  <?php echo $_POST["mobilemt"] ; ?>      <strong>Ville :</strong><?php echo $_POST["villemt"] ; ?><br/>
+            <strong>Tel :</strong>  <?php echo $_POST["telmt"] ; ?><br/>   
+            <strong>Mobile :</strong>  <?php echo $_POST["mobilemt"] ; ?><br/>      
+            <strong>Ville :</strong><?php echo $_POST["villemt"] ; ?><br/>
             <strong>Mail :</strong><?php echo $_POST["mailmt"] ; ?><br/><br/>
 
             <h4><u>Diététicienne : </u></h4>    
-            <strong>Tel :</strong> <?php echo $_POST["teld"] ; ?>    <strong> Mobile :</strong> <?php echo $_POST["mobiled"] ; ?>       <strong>Ville :</strong> <?php echo $_POST["villed"] ; ?><br/>
+            <strong>Tel :</strong> <?php echo $_POST["teld"] ; ?><br/>    
+            <strong>Mobile :</strong> <?php echo $_POST["mobiled"] ; ?><br/>       
+            <strong>Ville :</strong> <?php echo $_POST["villed"] ; ?><br/>
             <strong>Mail : </strong> <?php echo $_POST["maild"] ; ?><br/><br/>
 
-            <strong> Membre réseau :</strong> <?php echo $_POST["membrereseau"] ; ?> <br/> 
+            <strong>Membre réseau :</strong> <?php echo $_POST["membrereseau"] ; ?> <br/> 
             <strong>Nom du réseau : </strong> <?php echo $_POST["nomreseau"] ; ?><br/><br/>
         </p>
     </div>
@@ -70,10 +80,10 @@
             <strong>Date d’installation :</strong> <?php echo $_POST["dateinstallation"] ; ?> <br/>
             <strong>Type de cathéter :</strong> <?php echo $_POST["catheter"] ; ?><br/>
             <strong>Modèle :</strong> <?php echo $_POST["modele"] ; ?> <br/>
-            <strong>Longueur de canule :</strong> <?php echo $_POST["longueurcanule"] ; ?> mm              <strong> Longueur de tubulure :</strong>   <?php echo $_POST["longueurtubulure"] ; ?> cm
+            <strong>Longueur de canule :</strong> <?php echo $_POST["longueurcanule"] ; ?> mm              <strong>Longueur de tubulure :</strong>   <?php echo $_POST["longueurtubulure"] ; ?> cm
             <strong>Inserteur :</strong> <?php echo $_POST["inserteur"] ; ?><br/><br/>
 
-            <strong> Réservoir :</strong> <?php echo $_POST["reservoir"] ; ?> <br/>                      
+            <strong>Réservoir :</strong> <?php echo $_POST["reservoir"] ; ?> <br/>                      
             <strong>Système de portage de la pompe (qql lignes) : </strong> <?php echo $_POST["spp"] ; ?>  <br/>    
 
             <strong>Observations et commentaires :</strong> <?php echo $_POST["observation"] ; ?>  
@@ -112,13 +122,13 @@
         <h4><u>Auto surveillance glycémique :</u></h4>
         <p>
             <strong>Nombre de glycémies par jour :</strong> <?php echo $_POST["nombreglycemieparjour"] ; ?> <br/>
-            <strong>Type de lecteur :</strong> <?php echo $_POST["typelecteur"] ; ?>           <strong> Date de prescription : </strong> <?php echo $_POST["dateprescription"] ; ?><br/>      
+            <strong>Type de lecteur :</strong> <?php echo $_POST["typelecteur"] ; ?>           <strong>Date de prescription : </strong> <?php echo $_POST["dateprescription"] ; ?><br/>      
             <strong>Stylo auto piqueur/lancette :</strong> <?php echo $_POST["styloautopiqueur"] ; ?> <br/>     
             <strong>Insulinothérapie :</strong><br/>
-            <strong>Nombre d’injection par jour :</strong> <?php echo $_POST["nombreinjectionjour"] ; ?>           <strong> Schéma multi injection :</strong><br/>
+            <strong>Nombre d’injection par jour :</strong> <?php echo $_POST["nombreinjectionjour"] ; ?>           <strong>Schéma multi injection :</strong><br/>
             <strong>Stylo :</strong> <?php echo $_POST["stylo"] ; ?>      <strong>Autre : </strong> <?php echo $_POST["autrestylo"] ; ?>         
-            <strong> Aiguille pour stylo : </strong><?php echo $_POST["aiguillestylo"] ; ?> <br/>
-            <strong> Autre : </strong>  <?php echo $_POST["autreaiguille"] ; ?> <br/><br/><br/>    
+            <strong>Aiguille pour stylo : </strong><?php echo $_POST["aiguillestylo"] ; ?> <br/>
+            <strong>Autre : </strong>  <?php echo $_POST["autreaiguille"] ; ?> <br/><br/><br/>    
         </p>
     </div>
     <div class="dec">
@@ -487,7 +497,7 @@
         </div>
         <div class="dec">
             <h4><u>HABITUDES ALIMENTAIRES</u></h4>
-            <strong>    SUIVI DE POIDS : </strong> <?php echo $_POST["regime"] ; ?> <br>
+            <strong>SUIVI DE POIDS : </strong> <?php echo $_POST["regime"] ; ?> <br>
             <strong>Observation : </strong> <?php echo $_POST["observation2"] ; ?> <br>
             <strong>Survenue de compilations : </strong> <?php echo $_POST["survenue"] ; ?> <br>
             <strong>ATCD/ autre pathologies : </strong> <?php echo $_POST["atcd"] ; ?> <br>
