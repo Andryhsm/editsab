@@ -122,7 +122,7 @@
         </p>
     </div>
     <div class="dec">
-        <table class="table " >
+        <table class="table " style="margin-left: 110px;">
             <thead>
                 <tr>
                     <th style="width:100px";></th>
@@ -157,10 +157,10 @@
                     <td><?php $total = $total_1 + $total_2 + $total_3 ;  echo $total; ?></td>
                 </tr>
             </tbody>
-        </table>
+        </table><br/>
 
         <h4><u>Traitements complémentaires :</u></h4>
-        <table class="table table-hover">
+        <table class="table table-hover" style="margin-left: 70px;">
             <thead>
                 <tr>
                     <th style="width: 35%;">Spécialité</th>
@@ -188,16 +188,16 @@
         </table><br/><br/><br/>
     </div>
     <div class="dec">
-        <table class="table table-hover">
+        <table class="table table-hover" style="margin-right: 20px;">
             <tbody>
                 <tr>
                     <td colspan=8 style="text-align: center;">Shéma basals date 1</td>
                 </tr>
                 <tr>
-                    <td style="width:25%;" colspan=2>Schéma 1</td>
-                    <td style="width:25%;" colspan=2>Schéma 2</td>
-                    <td style="width:25%;" colspan=2>Schéma 3</td>
-                    <td style="width:25%;" colspan=2>Schéma 4</td>
+                    <td style="width:24%;" colspan=2>Schéma 1</td>
+                    <td style="width:24%;" colspan=2>Schéma 2</td>
+                    <td style="width:24%;" colspan=2>Schéma 3</td>
+                    <td style="width:24%;" colspan=2>Schéma 4</td>
                 </tr>
                 <tr>
                     <td>Horaire</td>
@@ -260,10 +260,10 @@
                     <td colspan=8 style="text-align: center;">Shéma basals date 2</td>
                 </tr>
                 <tr>
-                    <td style="width:25%;" colspan=2>Schéma 1</td>
-                    <td style="width:25%;" colspan=2>Schéma 2</td>
-                    <td style="width:25%;" colspan=2>Schéma 3</td>
-                    <td style="width:25%;" colspan=2>Schéma 4</td>
+                    <td style="width:24%;" colspan=2>Schéma 1</td>
+                    <td style="width:24%;" colspan=2>Schéma 2</td>
+                    <td style="width:24%;" colspan=2>Schéma 3</td>
+                    <td style="width:24%;" colspan=2>Schéma 4</td>
                 </tr>
                 <tr>
                     <td>Horaire</td>
@@ -324,7 +324,7 @@
             <thead>
                 <tr>
                     <th style="width:17.66666666666667%;">Valeur glycémique</th>
-                    <th style="width:17.66666666666667%;">Matin (UI)</th>
+                    <th style="width:14%;">Matin (UI)</th>
                     <th style="width:17.66666666666667%;">Midi (UI)</th>
                     <th style="width:18.66666666666667%;">Collation (UI)</th>
                     <th style="width:20%;">Soir (UI)</th>
@@ -405,10 +405,10 @@
                     <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc3"] ; ?></td>
                     <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc4"] ; ?></td>
                     <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc5"] ; ?></td>
-                    <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc6"] ; ?></td>
-                    <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc7"] ; ?></td>
-                    <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc8"] ; ?></td>
-                    <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc9"] ; ?></td>
+                    <td style="width: 9%;"><?php echo $_POST["ValDatesHemGlyc6"] ; ?></td>
+                    <td style="width: 9%;"><?php echo $_POST["ValDatesHemGlyc7"] ; ?></td>
+                    <td style="width: 9%;"><?php echo $_POST["ValDatesHemGlyc8"] ; ?></td>
+                    <td style="width: 9%;"><?php echo $_POST["ValDatesHemGlyc9"] ; ?></td>
                 </tr>
                 <tr>
                     <td style="width: 10%;">HbA1c (%)</td>
@@ -417,10 +417,10 @@
                     <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc3"] ; ?></td>
                     <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc4"] ; ?></td>
                     <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc5"] ; ?></td>
-                    <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc6"] ; ?></td>
-                    <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc7"] ; ?></td>
-                    <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc8"] ; ?></td>
-                    <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc9"] ; ?></td>
+                    <td style="width: 9%;"><?php echo $_POST["ValHbA1cHemGlyc6"] ; ?></td>
+                    <td style="width: 9%;"><?php echo $_POST["ValHbA1cHemGlyc7"] ; ?></td>
+                    <td style="width: 9%;"><?php echo $_POST["ValHbA1cHemGlyc8"] ; ?></td>
+                    <td style="width: 9%;"><?php echo $_POST["ValHbA1cHemGlyc9"] ; ?></td>
                 </tr>
             </tbody>
         </table>
@@ -442,14 +442,14 @@
         </div>
         <div class="dec">
             <h4><u>INSULUNOTHERAPIE FONCTIONNELLE</u></h4>
-            <table class="table " >
+            <table class="table " style="margin-left: 9px;">
                 <thead>
                     <tr>
-                        <th style="width:20%"></th>
-                        <th style="width:20%">Horaires</th>
-                        <th style="width:20%">Ration Insuline/glucide</th>
-                        <th style="width:20%">Objectif glicémique</th>
-                        <th style="width:20%">Sensibilité à l'insuline</th>
+                        <th style="width:19%"></th>
+                        <th style="width:19%">Horaires</th>
+                        <th style="width:19%">Ration Insuline/glucide</th>
+                        <th style="width:19%">Objectif glicémique</th>
+                        <th style="width:19%">Sensibilité à l'insuline</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -492,7 +492,7 @@
             <strong>Survenue de compilations : </strong> <?php echo $_POST["survenue"] ; ?> <br>
             <strong>ATCD/ autre pathologies : </strong> <?php echo $_POST["atcd"] ; ?> <br>
             <strong>Traitement :</strong> <?php echo $_POST["traitement"] ; ?> <br><br/><br/>
-            <table class="table " >
+            <table class="table " style="margin-left: 8px;">
                 <tbody>
                     <tr>
                         <td style="width:10%">Date</td>
@@ -500,11 +500,11 @@
                         <td style="width:10%"><?php echo $_POST["date2"] ; ?></td>
                         <td style="width:10%"><?php echo $_POST["date3"] ; ?></td>
                         <td style="width:10%"><?php echo $_POST["date4"] ; ?></td>
-                        <td style="width:10%"><?php echo $_POST["date5"] ; ?></td>
-                        <td style="width:10%"><?php echo $_POST["date6"] ; ?></td>
-                        <td style="width:10%"><?php echo $_POST["date7"] ; ?></td>
-                        <td style="width:10%"><?php echo $_POST["date8"] ; ?></td>
-                        <td style="width:10%"><?php echo $_POST["date9"] ; ?></td>
+                        <td style="width:9%"><?php echo $_POST["date5"] ; ?></td>
+                        <td style="width:9%"><?php echo $_POST["date6"] ; ?></td>
+                        <td style="width:9%"><?php echo $_POST["date7"] ; ?></td>
+                        <td style="width:9%"><?php echo $_POST["date8"] ; ?></td>
+                        <td style="width:9%"><?php echo $_POST["date9"] ; ?></td>
                     </tr>
                     <tr>
                         <td>Taille</td>
@@ -670,7 +670,7 @@
                             <td style="text-align: center; width: 14%;">Date</td>
                             <td style="text-align: center; width: 14%;">Date</td>
                             <td style="text-align: center; width: 14%;">Date</td>
-                            <td style="text-align: center; width: 20%;">Commentaire</td>
+                            <td style="text-align: center; width: 15%;">Commentaire</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -760,7 +760,7 @@
                             <td style="text-align: center; width: 14%;">Date</td>
                             <td style="text-align: center; width: 14%;">Date</td>
                             <td style="text-align: center; width: 14%;">Date</td>
-                            <td style="text-align: center; width: 20%;">Commentaire</td>
+                            <td style="text-align: center; width: 14%;">Commentaire</td>
                         </tr>
                     </thead>
                     <tbody>
