@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="bootstrap/css/cerulean.css">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
         <link rel="stylesheet" type="text/css" href="bootstrap-datepicker-1.6.4/css/bootstrap-datepicker3.min.css">
-        <!--<link rel="stylesheet" type="text/css" href="bootstrap-datepicker-1.6.4/css/bootstrap-datetimepicker.min.css">-->
+        <link rel="stylesheet" type="text/css" href="bootstrap-datepicker-1.6.4/css/bootstrap-datetimepicker.min.css">
 
         <style>
             #rot  img{

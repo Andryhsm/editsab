@@ -396,59 +396,59 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire1" id="Horaire1"></td>
                             <td><input type="number" class="form-control" name="Debit1" id="Debit1"></td>
-                            <td><input type="text" class="form-control" name="Horaire2" id="Horaire2" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire2" id="Horaire2"></td>
                             <td><input type="number" class="form-control" name="Debit2" id="Debit2"></td>
-                            <td><input type="text" class="form-control" name="Horaire3" id="Horaire3" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire3" id="Horaire3"></td>
                             <td><input type="number" class="form-control" name="Debit3" id="Debit3"></td>
-                            <td><input type="text" class="form-control" name="Horaire4" id="Horaire4" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire4" id="Horaire4"></td>
                             <td><input type="number" class="form-control" name="Debit4" id="Debit4"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="Horaire5" id="Horaire5" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire5" id="Horaire5"></td>
                             <td><input type="number" class="form-control" name="Debit5" id="Debit5"></td>
-                            <td><input type="text" class="form-control" name="Horaire6" id="Horaire6" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire6" id="Horaire6"></td>
                             <td><input type="number" class="form-control" name="Debit6" id="Debit6"></td>
-                            <td><input type="text" class="form-control" name="Horaire7" id="Horaire7" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire7" id="Horaire7"></td>
                             <td><input type="number" class="form-control" name="Debit7" id="Debit7"></td>
-                            <td><input type="text" class="form-control" name="Horaire8" id="Horaire8" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire8" id="Horaire8"></td>
                             <td><input type="number" class="form-control" name="Debit8" id="Debit8"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="Horaire9" id="Horaire9" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire9" id="Horaire9"></td>
                             <td><input type="number" class="form-control" name="Debit9" id="Debit9"></td>
-                            <td><input type="text" class="form-control" name="Horaire10" id="Horaire10" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire10" id="Horaire10"></td>
                             <td><input type="number" class="form-control" name="Debit10" id="Debit10"></td>
-                            <td><input type="text" class="form-control" name="Horaire11" id="Horaire11" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire11" id="Horaire11"></td>
                             <td><input type="number" class="form-control" name="Debit11" id="Debit11"></td>
-                            <td><input type="text" class="form-control" name="Horaire12" id="Horaire12" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire12" id="Horaire12"></td>
                             <td><input type="number" class="form-control" name="Debit12" id="Debit12"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" class="form-control" name="Horaire13" id="Horaire13" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire13" id="Horaire13"></td>
                             <td><input type="number" class="form-control" name="Debit13" id="Debit13"></td>
-                            <td><input type="text" class="form-control" name="Horaire14" id="Horaire14" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire14" id="Horaire14"></td>
                             <td><input type="number" class="form-control" name="Debit14" id="Debit14"></td>
-                            <td><input type="text" class="form-control" name="Horaire15" id="Horaire15" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire15" id="Horaire15"></td>
                             <td><input type="number" class="form-control" name="Debit15" id="Debit15"></td>
-                            <td><input type="text" class="form-control" name="Horaire16" id="Horaire16" value="00:00" readonly></td>
-                            <td><input type="text" class="form-control" name="Horaire1" id="Horaire1" readonly value="23:59"></td>
+                            <td><input type="text" class="form-control" value="00:00" readonly></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire16" id="Horaire16"></td>
                             <td><input type="number" class="form-control" name="Debit16" id="Debit16"></td>
                         </tr>
                     </tbody>
@@ -501,59 +501,59 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire21" id="Horaire21"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire21" id="Horaire21"></td>
                             <td><input type="text" class="form-control" name="Debit21" id="Debit21"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire22" id="Horaire22"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire22" id="Horaire22"></td>
                             <td><input type="text" class="form-control" name="Debit22" id="Debit22"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire23" id="Horaire23"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire23" id="Horaire23"></td>
                             <td><input type="text" class="form-control" name="Debit23" id="Debit23"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire24" id="Horaire24"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire24" id="Horaire24"></td>
                             <td><input type="text" class="form-control" name="Debit24" id="Debit24"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire25" id="Horaire25"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire25" id="Horaire25"></td>
                             <td><input type="text" class="form-control" name="Debit25" id="Debit25"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire26" id="Horaire26"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire26" id="Horaire26"></td>
                             <td><input type="text" class="form-control" name="Debit26" id="Debit26"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire27" id="Horaire27"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire27" id="Horaire27"></td>
                             <td><input type="text" class="form-control" name="Debit27" id="Debit27"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire28" id="Horaire28"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire28" id="Horaire28"></td>
                             <td><input type="text" class="form-control" name="Debit28" id="Debit28"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire29" id="Horaire29"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire29" id="Horaire29"></td>
                             <td><input type="text" class="form-control" name="Debit29" id="Debit29"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire210" id="Horaire210"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire210" id="Horaire210"></td>
                             <td><input type="text" class="form-control" name="Debit210" id="Debit210"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire211" id="Horaire211"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire211" id="Horaire211"></td>
                             <td><input type="text" class="form-control" name="Debit211" id="Debit211"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire212" id="Horaire212"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire212" id="Horaire212"></td>
                             <td><input type="text" class="form-control" name="Debit212" id="Debit212"></td>
                         </tr>
                         <tr>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire213" id="Horaire213"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire213" id="Horaire213"></td>
                             <td><input type="text" class="form-control" name="Debit213" id="Debit213"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire214" id="Horaire214"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire214" id="Horaire214"></td>
                             <td><input type="text" class="form-control" name="Debit214" id="Debit214"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire215" id="Horaire215"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire215" id="Horaire215"></td>
                             <td><input type="text" class="form-control" name="Debit215" id="Debit215"></td>
-                            <td><input type="text" readonly value="00:00"class="form-control" name="Horaire216" id="Horaire216"></td>
-                            <td><input type="text" readonly value="23:59"class="form-control" name="Horaire21" id="Horaire21"></td>
+                            <td><input type="text" readonly value="00:00"class="form-control"></td>
+                            <td><input type="text" class="form-control datetimepicker" name="Horaire216" id="Horaire216"></td>
                             <td><input type="text" class="form-control" name="Debit216" id="Debit216"></td>
                         </tr>
                     </tbody>
