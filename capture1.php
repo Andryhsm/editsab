@@ -90,36 +90,19 @@
                     </tbody>
                 </table>
 
-                  <div>
+                  <div id="capture">
                             <h4>Histogrammes des débits suivant le Schémas basals date 2</h4>
                             <canvas id="bardate1" />
-
-			                <button class="btn btn-primary btn-lg" id="pics">Générer image</button>
+                 </div>
+                 <button class="btn btn-primary btn-lg" id="pics">Générer image</button>
 			                <!-- chart -->
 			                </br>
-
-                        </div>
 </body>
 <script src="jquery/jquery-2.1.4.min.js"></script>
  <script src="assets/js/Chart.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script type="text/javascript">
 	 					
-						 var Horaire1 = "",
-                            Horaire2 = "",
-                            Horaire3 = "",
-                            Horaire4 = "",
-                            Horaire5 = "",
-                            Horaire6 = "",
-                            Horaire7 = "",
-                            Horaire8 = "";
-                    var Horaire9 = "",
-                            Horaire10 = "",
-                            Horaire11 = "",
-                            Horaire12 = "",
-                            Horaire13 = "",
-                            Horaire14 = "",
-                            Horaire15 = "",
-                            Horaire16 = "";
 
 
                     var Debit1 = 0,
@@ -138,6 +121,8 @@
                             Debit14 = 0,
                             Debit15 = 0,
                             Debit16 = 0;
+
+
 	 					$("#Debit1").change(function (event) {
                             Debit1 = $('#Debit1').val();
                             Debit_graphe1(Debit1, Debit2, Debit3, Debit4, Debit5, Debit6, Debit7, Debit8, Debit9, Debit10, Debit11, Debit12, Debit13, Debit14, Debit15, Debit16);
@@ -239,5 +224,30 @@
                         var bardate01 = document.getElementById('bardate1').getContext('2d');
                         new Chart(bardate01).Bar(barData1, barOptions);
                     }
+</script>
+<script language="javascript">
+
+$("#pics").click(function(event) {
+	
+
+$(document).ready(function() {
+	var capture = {};
+	var target = $('#capture');
+	html2canvas(target, {
+		onrendered: function(canvas) {
+			capture.img = canvas.toDataURL( "image/png" );
+			capture.data = { 'image' : capture.img };
+			$.ajax({
+			url: "ajax.php",
+			data: capture.data,
+			type: 'post',
+			success: function( result ) {
+					alert('image bien generer');
+			}
+			});
+		}
+	});
+});
+});
 </script>
 </html>

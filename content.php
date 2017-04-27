@@ -243,7 +243,10 @@
                 </tr>
                 
             </tbody>
-        </table><br/><br/><br/>
+        </table><br/>
+        <h4>Histogrammes des débits suivant le Schémas basals date 1</h4>
+            <img src="img/image.png" style="width: 700px;" />
+        <br/><br/>
     </div>
     <div class="dec">
         <table class="table table-hover">
@@ -308,7 +311,10 @@
                     <td><?php echo $_POST["Debit216"] ; ?></td>
                 </tr>
             </tbody>
-        </table><br/><br/><br/>
+        </table><br/>
+            
+            <img src="img/image2.png" style="width: 700px;" />
+        <br/><br/>
     </div>
     
     <div class="dec">
@@ -1059,6 +1065,7 @@
                     </tbody>
                 </table>
 
+              
     </div>
 </div>
   

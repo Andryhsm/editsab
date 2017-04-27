@@ -6,11 +6,13 @@
     <head>
         <meta charset="UTF-8">
         <title>installation</title>
+
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.miin.css">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/cerulean.css">
         <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
         <link rel="stylesheet" type="text/css" href="bootstrap-datepicker-1.6.4/css/bootstrap-datepicker3.min.css">
         <link rel="stylesheet" type="text/css" href="bootstrap-datepicker-1.6.4/css/bootstrap-datetimepicker.min.css">
+
 
         <style>
             #rot  img{
@@ -1722,7 +1724,7 @@
         <script src="./bootstrap/js/bootstrap.min.js"></script> 
         <script src="assets/js/ie-emulation-modes-warning.js"></script>
         <script src="assets/js/Chart.min.js"></script>
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
         <script type="text/javascript">
                 $('#enregistrer').click(function () {
                     $('#save').trigger('click');
@@ -1769,6 +1771,75 @@
                             }, 4000);
                         }
                     });
+
+
+                    //Pour les photo du pdf
+                    var capture = {};
+                    var target = $('#bardate1');
+                    html2canvas(target, {
+                        onrendered: function(canvas) {
+                            capture.img = canvas.toDataURL( "image/png" );
+                            capture.data = { 'image' : capture.img };
+                            $.ajax({
+                            url: "pdf/ajax.php",
+                            data: capture.data,
+                            type: 'post',
+                            success: function( result ) {
+                                    alert('image bien generer');
+                            }
+                            });
+                        }
+                    });
+                    var capture2 = {};
+                    var target2 = $('#bardate2');
+                    html2canvas(target2, {
+                        onrendered: function(canvas) {
+                            capture2.img = canvas.toDataURL( "image/png" );
+                            capture2.data = { 'image' : capture2.img };
+                            $.ajax({
+                            url: "pdf/ajax2.php",
+                            data: capture2.data,
+                            type: 'post',
+                            success: function( result ) {
+                                    alert('image bien generer');
+                            }
+                            });
+                        }
+                    });
+                    var capture3 = {};
+                    var target3 = $('#barhg');
+                    html2canvas(target3, {
+                        onrendered: function(canvas) {
+                            capture3.img = canvas.toDataURL( "image/png" );
+                            capture3.data = { 'image' : capture3.img };
+                            $.ajax({
+                            url: "pdf/ajax3.php",
+                            data: capture3.data,
+                            type: 'post',
+                            success: function( result ) {
+                                    alert('image bien generer');
+                            }
+                            });
+                        }
+                    });
+
+                    var capture4 = {};
+                    var target4 = $('#bar');
+                    html2canvas(target4, {
+                        onrendered: function(canvas) {
+                            capture4.img = canvas.toDataURL( "image/png" );
+                            capture4.data = { 'image' : capture4.img };
+                            $.ajax({
+                            url: "pdf/ajax4.php",
+                            data: capture4.data,
+                            type: 'post',
+                            success: function( result ) {
+                                    alert('image bien generer');
+                            }
+                            });
+                        }
+                    });
+
                 });
 
                 function enHaut()
