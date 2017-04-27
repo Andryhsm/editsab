@@ -459,10 +459,14 @@
                     <!-- Row and col -->
                     <div class="row">
 
-                        <div>
+                        <div id="capture">
                             <h4>Histogrammes des débits suivant le Schémas basals date 1</h4>
                             <canvas id="bardate1" />
                         </div>
+
+                       	<button class="btn btn-primary btn-lg" id="pics">Générer image</button>
+                		<!-- chart -->
+               
 
                     </div>
                 </div>
@@ -563,6 +567,11 @@
                         <div>
                             <h4>Histogrammes des débits suivant le Schémas basals date 2</h4>
                             <canvas id="bardate2" />
+
+			                <button class="btn btn-primary btn-lg" id="pics">Générer image</button>
+			                <!-- chart -->
+			                </br>
+
                         </div>
 
                     </div>
@@ -735,6 +744,7 @@
 
     </div>	
 </section>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 <script type="text/javascript">
 
     $("#taille").blur(function() {
@@ -757,4 +767,30 @@
         $('#imc').val(imcPT);
     });
 
+</script>
+
+<script language="javascript">
+
+$("#pics").click(function(event) {
+	
+
+$(document).ready(function() {
+	var capture = {};
+	var target = $('#capture');
+	html2canvas(target, {
+		onrendered: function(canvas) {
+			capture.img = canvas.toDataURL( "image/png" );
+			capture.data = { 'image' : capture.img };
+			$.ajax({
+			url: "ajax.php",
+			data: capture.data,
+			type: 'post',
+			success: function( result ) {
+					alert('image bien generer');
+			}
+			});
+		}
+	});
+});
+});
 </script>
