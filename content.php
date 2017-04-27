@@ -18,8 +18,6 @@
     ?>
 
     <div id='content' >
-         <div><img style="position: relative; margin-left: 600px; width: 120px;" src="img/basitide.png"></div>
-        <div class="dec"><br/><br/><div style="margin-left: 170px;"><h3>Installation de pompe à insuline</h3></div><br/><br/><br/></div>
         <div class="dec">
             <h4><u>RENSEIGNEMENTS BASTIDE LE CONFORT MEDICAL</u></h4>
             <p>
@@ -27,34 +25,44 @@
                 <strong>Prénom : </strong> <?php echo $_POST["prenomresp"] ; ?>  <br/>
                 <strong>Mobile : </strong> <?php echo $_POST["mobileresp"] ; ?>  <br/>
                 <strong>Coordonnées :</strong> <?php echo $_POST["coordonnee"] ; ?> 
-
-                    <h4><u>RENSEIGNEMENTS PATIENT</u></h4>
-                <strong>Nom :</strong> <?php echo $_POST["nompatient"] ; ?>  <br/>
-                <strong>Prénom :</strong><?php echo $_POST["prenompatient"] ; ?><br/>
-                <strong>Né(e) le : </strong><?php echo $_POST["datenaissance"] ; ?> <br/>
-                <strong>Age :</strong> <?php echo $_POST["agepatient"] ; ?><br/>
-                <strong>Tel : </strong> <?php echo $_POST["telpatient"] ; ?><br/>
-                <strong>Mobile :</strong><?php echo $_POST["mobilepatient"] ; ?><br/>
-                <strong>Adresse :</strong><?php echo $_POST["adressepatient"] ; ?><br/>
-                <strong>Code postal :</strong><?php echo $_POST["codepostalpatient"] ; ?><br/>    
-                <strong>Ville :</strong><?php echo $_POST["villepatient"] ; ?><br/>
-                <h4><u>RENSEIGNEMENTS PRESCRIPTEUR</u></h4>
-                
-                <strong>Etablissement prescripteur:</strong> <?php echo $_POST["etablissementprescripteur"] ; ?> <br/>
-                <strong>Service :</strong> <?php echo $_POST["serviceep"] ; ?> <br/><br/> 
-
-                <strong>Mail :</strong> <?php echo $_POST["maildl"] ; ?> <br/><br/>
-
-                <h4><u> Médecin traitant :</u></h4>
-                <strong>Tel :</strong>  <?php echo $_POST["telmt"] ; ?><br/>   
-                <strong>Mobile :</strong>  <?php echo $_POST["mobilemt"] ; ?><br/>      
-                <strong>Ville :</strong><?php echo $_POST["villemt"] ; ?><br/>
-                <strong>Mail :</strong><?php echo $_POST["mailmt"] ; ?><br/><br/>
-
-                <strong>Membre réseau :</strong> <?php echo $_POST["membrereseau"] ; ?> <br/> 
             </p>
         </div>
-       
+        <div class="dec">
+            <h4><u>RENSEIGNEMENTS PATIENT</u></h4>
+            <strong>Nom :</strong> <?php echo $_POST["nompatient"] ; ?>  <br/>
+            <strong>Prénom :</strong><?php echo $_POST["prenompatient"] ; ?><br/>
+            <strong>Né(e) le : </strong><?php echo $_POST["datenaissance"] ; ?> &nbsp;&nbsp;&nbsp;&nbsp; <strong>Age :</strong> <?php echo $_POST["agepatient"] ; ?><br/>
+            <strong>Tel : </strong> <?php echo $_POST["telpatient"] ; ?>  &nbsp;&nbsp;&nbsp;&nbsp; <strong>Mobile :</strong><?php echo $_POST["mobilepatient"] ; ?><br/>
+            <strong>Adresse :</strong><?php echo $_POST["adressepatient"] ; ?><br/>
+            <strong>Code postal :</strong><?php echo $_POST["codepostalpatient"] ; ?><br/>    
+            <strong>Ville :</strong><?php echo $_POST["villepatient"] ; ?><br/>
+        </div>
+        <div class="dec">
+            <h4><u>RENSEIGNEMENTS PRESCRIPTEUR</u></h4>
+            <p>
+                <strong>Etablissement prescripteur:</strong> <?php echo $_POST["etablissementprescripteur"] ; ?> <br/>
+               <strong>Service :</strong> <?php echo $_POST["serviceep"] ; ?> <br/><br/> 
+
+            <h4><u>Diabétologue prescripteur :</u></h4> <?php echo $_POST["diabetologueprescripteur"] ; ?>
+            <strong>Tel :</strong> <?php echo $_POST["teldp"] ; ?>      <strong>Mobile :</strong>  <?php echo $_POST["mobiledp"] ; ?>     <strong> Ville :</strong><?php echo $_POST["villedp"] ; ?><br/>
+            <strong>Mail :</strong><?php echo $_POST["maildp"] ; ?><br/><br/>
+
+            <h4><u>Diabétologue libéral :</u></h4>
+            <strong>Tel :</strong>  <?php echo $_POST["teldl"] ; ?>   <strong> Mobile :</strong>   <?php echo $_POST["mobiledl"] ; ?>     <strong>Ville :</strong><?php echo $_POST["villedl"] ; ?><br/>
+            <strong>Mail :</strong> <?php echo $_POST["maildl"] ; ?> <br/><br/>
+
+            <h4><u> Médecin traitant :</u></h4>
+            <strong>Tel :</strong>  <?php echo $_POST["telmt"] ; ?>   <strong>Mobile :</strong>  <?php echo $_POST["mobilemt"] ; ?>      <strong>Ville :</strong><?php echo $_POST["villemt"] ; ?><br/>
+            <strong>Mail :</strong><?php echo $_POST["mailmt"] ; ?><br/><br/>
+
+            <h4><u>Diététicienne : </u></h4>    
+            <strong>Tel :</strong> <?php echo $_POST["teld"] ; ?>    <strong> Mobile :</strong> <?php echo $_POST["mobiled"] ; ?>       <strong>Ville :</strong> <?php echo $_POST["villed"] ; ?><br/>
+            <strong>Mail : </strong> <?php echo $_POST["maild"] ; ?><br/><br/>
+
+            <strong> Membre réseau :</strong> <?php echo $_POST["membrereseau"] ; ?> <br/> 
+            <strong>Nom du réseau : </strong> <?php echo $_POST["nomreseau"] ; ?><br/><br/>
+        </p>
+    </div>
     <div class="dec">
         <h4><u>CHOIX DU MATERIEL</u></h4>
         <p>   
@@ -62,10 +70,10 @@
             <strong>Date d’installation :</strong> <?php echo $_POST["dateinstallation"] ; ?> <br/>
             <strong>Type de cathéter :</strong> <?php echo $_POST["catheter"] ; ?><br/>
             <strong>Modèle :</strong> <?php echo $_POST["modele"] ; ?> <br/>
-            <strong>Longueur de canule :</strong> <?php echo $_POST["longueurcanule"] ; ?> mm              <strong>Longueur de tubulure :</strong>   <?php echo $_POST["longueurtubulure"] ; ?> cm
+            <strong>Longueur de canule :</strong> <?php echo $_POST["longueurcanule"] ; ?> mm              <strong> Longueur de tubulure :</strong>   <?php echo $_POST["longueurtubulure"] ; ?> cm
             <strong>Inserteur :</strong> <?php echo $_POST["inserteur"] ; ?><br/><br/>
 
-            <strong>Réservoir :</strong> <?php echo $_POST["reservoir"] ; ?> <br/>                      
+            <strong> Réservoir :</strong> <?php echo $_POST["reservoir"] ; ?> <br/>                      
             <strong>Système de portage de la pompe (qql lignes) : </strong> <?php echo $_POST["spp"] ; ?>  <br/>    
 
             <strong>Observations et commentaires :</strong> <?php echo $_POST["observation"] ; ?>  
@@ -84,10 +92,10 @@
     <table style="margin: 0px 30px 0px 50px;">
         <thead>
             <tr>
-                <th style="width: 20%";><strong>Poids actuel (kg) </strong></th>
-                <th style="width: 20%";><strong>Poids de forme (kg)</strong></th>
-                <th style="width: 20%";><strong>Taille (cm)</strong></th>
-                <th style="width: 20%";><strong>IMC</strong></th>
+                <th style="width: 20%";>Poids actuel (kg) </th>
+                <th style="width: 20%";>Poids de forme (kg)</th>
+                <th style="width: 20%";>Taille (cm)</th>
+                <th style="width: 20%";>IMC</th>
             </tr>
         </thead>
         <tbody>
@@ -104,23 +112,23 @@
         <h4><u>Auto surveillance glycémique :</u></h4>
         <p>
             <strong>Nombre de glycémies par jour :</strong> <?php echo $_POST["nombreglycemieparjour"] ; ?> <br/>
-            <strong>Type de lecteur :</strong> <?php echo $_POST["typelecteur"] ; ?>           <strong>Date de prescription : </strong> <?php echo $_POST["dateprescription"] ; ?><br/>      
+            <strong>Type de lecteur :</strong> <?php echo $_POST["typelecteur"] ; ?>           <strong> Date de prescription : </strong> <?php echo $_POST["dateprescription"] ; ?><br/>      
             <strong>Stylo auto piqueur/lancette :</strong> <?php echo $_POST["styloautopiqueur"] ; ?> <br/>     
             <strong>Insulinothérapie :</strong><br/>
-            <strong>Nombre d’injection par jour :</strong> <?php echo $_POST["nombreinjectionjour"] ; ?>           <strong>Schéma multi injection :</strong><br/>
+            <strong>Nombre d’injection par jour :</strong> <?php echo $_POST["nombreinjectionjour"] ; ?>           <strong> Schéma multi injection :</strong><br/>
             <strong>Stylo :</strong> <?php echo $_POST["stylo"] ; ?>      <strong>Autre : </strong> <?php echo $_POST["autrestylo"] ; ?>         
-            <strong>Aiguille pour stylo : </strong><?php echo $_POST["aiguillestylo"] ; ?> <br/>
-            <strong>Autre : </strong>  <?php echo $_POST["autreaiguille"] ; ?> <br/><br/><br/>    
+            <strong> Aiguille pour stylo : </strong><?php echo $_POST["aiguillestylo"] ; ?> <br/>
+            <strong> Autre : </strong>  <?php echo $_POST["autreaiguille"] ; ?> <br/><br/><br/>    
         </p>
     </div>
     <div class="dec">
-        <table class="table " style="margin-left: 110px;">
+        <table class="table " >
             <thead>
                 <tr>
                     <th style="width:100px";></th>
-                    <th style="width:100px";><strong>Insuline lente</strong></th>
-                    <th style="width:100px";><strong>Insuline rapide</strong></th>
-                    <th style="width:100px";><strong>Quantité totale</strong></th>
+                    <th style="width:100px";>Insuline lente</th>
+                    <th style="width:100px";>Insuline rapide</th>
+                    <th style="width:100px";>Quantité totale</th>
                 </tr>
             </thead>
             <tbody>
@@ -149,14 +157,14 @@
                     <td><?php $total = $total_1 + $total_2 + $total_3 ;  echo $total; ?></td>
                 </tr>
             </tbody>
-        </table><br/>
+        </table>
 
         <h4><u>Traitements complémentaires :</u></h4>
-        <table class="table table-hover" style="margin-left: 70px;">
+        <table class="table table-hover">
             <thead>
                 <tr>
-                    <th style="width: 35%;"><strong>Spécialité</strong></th>
-                    <th style="width: 35%;"><strong>Posologie</strong></th>
+                    <th style="width: 35%;">Spécialité</th>
+                    <th style="width: 35%;">Posologie</th>
                 </tr>
             </thead>
             <tbody>
@@ -180,16 +188,16 @@
         </table><br/><br/><br/>
     </div>
     <div class="dec">
-        <table class="table table-hover" style="margin-right: 20px;">
+        <table class="table table-hover">
             <tbody>
                 <tr>
-                    <td colspan=8 style="text-align: center;"><strong>Shéma basals date 1</strong></td>
+                    <td colspan=8 style="text-align: center;">Shéma basals date 1</td>
                 </tr>
                 <tr>
-                    <td style="width:24%;" colspan=2><strong>Schéma 1</strong></td>
-                    <td style="width:24%;" colspan=2><strong>Schéma 2</strong></td>
-                    <td style="width:24%;" colspan=2><strong>Schéma 3</strong></td>
-                    <td style="width:24%;" colspan=2><strong>Schéma 4</strong></td>
+                    <td style="width:25%;" colspan=2>Schéma 1</td>
+                    <td style="width:25%;" colspan=2>Schéma 2</td>
+                    <td style="width:25%;" colspan=2>Schéma 3</td>
+                    <td style="width:25%;" colspan=2>Schéma 4</td>
                 </tr>
                 <tr>
                     <td>Horaire</td>
@@ -249,13 +257,13 @@
         <table class="table table-hover">
             <tbody>
                 <tr>
-                    <td colspan=8 style="text-align: center;"><strong>Shéma basals date 2</strong></td>
+                    <td colspan=8 style="text-align: center;">Shéma basals date 2</td>
                 </tr>
                 <tr>
-                    <td style="width:24%;" colspan=2><strong>Schéma 1</strong></td>
-                    <td style="width:24%;" colspan=2><strong>Schéma 2</strong></td>
-                    <td style="width:24%;" colspan=2><strong>Schéma 3</strong></td>
-                    <td style="width:24%;" colspan=2><strong>Schéma 4</strong></td>
+                    <td style="width:25%;" colspan=2>Schéma 1</td>
+                    <td style="width:25%;" colspan=2>Schéma 2</td>
+                    <td style="width:25%;" colspan=2>Schéma 3</td>
+                    <td style="width:25%;" colspan=2>Schéma 4</td>
                 </tr>
                 <tr>
                     <td>Horaire</td>
@@ -315,11 +323,11 @@
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th style="width:17.66666666666667%;"><strong>Valeur glycémique</strong></th>
-                    <th style="width:14%;"><strong>Matin (UI)</strong></th>
-                    <th style="width:17.66666666666667%;"><strong>Midi (UI)</strong></th>
-                    <th style="width:18.66666666666667%;"><strong>Collation (UI)</strong></th>
-                    <th style="width:19.6%;"><strong>Soir (UI)</strong></th>
+                    <th style="width:17.66666666666667%;">Valeur glycémique</th>
+                    <th style="width:17.66666666666667%;">Matin (UI)</th>
+                    <th style="width:17.66666666666667%;">Midi (UI)</th>
+                    <th style="width:18.66666666666667%;">Collation (UI)</th>
+                    <th style="width:20%;">Soir (UI)</th>
                     <th>Autre (UI)</th>
                 </tr>
             </thead>
@@ -397,10 +405,10 @@
                     <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc3"] ; ?></td>
                     <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc4"] ; ?></td>
                     <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc5"] ; ?></td>
-                    <td style="width: 9%;"><?php echo $_POST["ValDatesHemGlyc6"] ; ?></td>
-                    <td style="width: 9%;"><?php echo $_POST["ValDatesHemGlyc7"] ; ?></td>
-                    <td style="width: 9%;"><?php echo $_POST["ValDatesHemGlyc8"] ; ?></td>
-                    <td style="width: 9%;"><?php echo $_POST["ValDatesHemGlyc9"] ; ?></td>
+                    <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc6"] ; ?></td>
+                    <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc7"] ; ?></td>
+                    <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc8"] ; ?></td>
+                    <td style="width: 10%;"><?php echo $_POST["ValDatesHemGlyc9"] ; ?></td>
                 </tr>
                 <tr>
                     <td style="width: 10%;">HbA1c (%)</td>
@@ -409,10 +417,10 @@
                     <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc3"] ; ?></td>
                     <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc4"] ; ?></td>
                     <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc5"] ; ?></td>
-                    <td style="width: 9%;"><?php echo $_POST["ValHbA1cHemGlyc6"] ; ?></td>
-                    <td style="width: 9%;"><?php echo $_POST["ValHbA1cHemGlyc7"] ; ?></td>
-                    <td style="width: 9%;"><?php echo $_POST["ValHbA1cHemGlyc8"] ; ?></td>
-                    <td style="width: 9%;"><?php echo $_POST["ValHbA1cHemGlyc9"] ; ?></td>
+                    <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc6"] ; ?></td>
+                    <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc7"] ; ?></td>
+                    <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc8"] ; ?></td>
+                    <td style="width: 10%;"><?php echo $_POST["ValHbA1cHemGlyc9"] ; ?></td>
                 </tr>
             </tbody>
         </table>
@@ -434,14 +442,14 @@
         </div>
         <div class="dec">
             <h4><u>INSULUNOTHERAPIE FONCTIONNELLE</u></h4>
-            <table class="table " style="margin-left: 9px;">
+            <table class="table " >
                 <thead>
                     <tr>
-                        <th style="width:19%"></th>
-                        <th style="width:19%"><strong>Horaires</strong></th>
-                        <th style="width:19%"><strong>Ration Insuline/glucide</strong></th>
-                        <th style="width:19%"><strong>Objectif glicémique</strong></th>
-                        <th style="width:19%"><strong>Sensibilité à l'insuline</strong></th>
+                        <th style="width:20%"></th>
+                        <th style="width:20%">Horaires</th>
+                        <th style="width:20%">Ration Insuline/glucide</th>
+                        <th style="width:20%">Objectif glicémique</th>
+                        <th style="width:20%">Sensibilité à l'insuline</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -479,12 +487,12 @@
         </div>
         <div class="dec">
             <h4><u>HABITUDES ALIMENTAIRES</u></h4>
-            <strong>SUIVI DE POIDS : </strong> <?php echo $_POST["regime"] ; ?> <br>
+            <strong>    SUIVI DE POIDS : </strong> <?php echo $_POST["regime"] ; ?> <br>
             <strong>Observation : </strong> <?php echo $_POST["observation2"] ; ?> <br>
             <strong>Survenue de compilations : </strong> <?php echo $_POST["survenue"] ; ?> <br>
             <strong>ATCD/ autre pathologies : </strong> <?php echo $_POST["atcd"] ; ?> <br>
             <strong>Traitement :</strong> <?php echo $_POST["traitement"] ; ?> <br><br/><br/>
-            <table class="table " style="margin-left: 8px;">
+            <table class="table " >
                 <tbody>
                     <tr>
                         <td style="width:10%">Date</td>
@@ -492,11 +500,11 @@
                         <td style="width:10%"><?php echo $_POST["date2"] ; ?></td>
                         <td style="width:10%"><?php echo $_POST["date3"] ; ?></td>
                         <td style="width:10%"><?php echo $_POST["date4"] ; ?></td>
-                        <td style="width:9%"><?php echo $_POST["date5"] ; ?></td>
-                        <td style="width:9%"><?php echo $_POST["date6"] ; ?></td>
-                        <td style="width:9%"><?php echo $_POST["date7"] ; ?></td>
-                        <td style="width:9%"><?php echo $_POST["date8"] ; ?></td>
-                        <td style="width:9%"><?php echo $_POST["date9"] ; ?></td>
+                        <td style="width:10%"><?php echo $_POST["date5"] ; ?></td>
+                        <td style="width:10%"><?php echo $_POST["date6"] ; ?></td>
+                        <td style="width:10%"><?php echo $_POST["date7"] ; ?></td>
+                        <td style="width:10%"><?php echo $_POST["date8"] ; ?></td>
+                        <td style="width:10%"><?php echo $_POST["date9"] ; ?></td>
                     </tr>
                     <tr>
                         <td>Taille</td>
@@ -524,15 +532,15 @@
                     </tr>
                     <tr>
                         <td>IMC</td>
-                        <td><?php echo round($_POST["imc1"], 2) ; ?></td>
-                        <td><?php echo round($_POST["imc2"], 2) ; ?></td>
-                        <td><?php echo round($_POST["imc3"], 2) ; ?></td>
-                        <td><?php echo round($_POST["imc4"], 2) ; ?></td>
-                        <td><?php echo round($_POST["imc5"], 2) ; ?></td>
-                        <td><?php echo round($_POST["imc6"], 2) ; ?></td>
-                        <td><?php echo round($_POST["imc7"], 2) ; ?></td>
-                        <td><?php echo round($_POST["imc8"], 2) ; ?></td>
-                        <td><?php echo round($_POST["imc9"], 2) ; ?></td>
+                        <td><?php echo $_POST["imc1"] ; ?></td>
+                        <td><?php echo $_POST["imc2"] ; ?></td>
+                        <td><?php echo $_POST["imc3"] ; ?></td>
+                        <td><?php echo $_POST["imc4"] ; ?></td>
+                        <td><?php echo $_POST["imc5"] ; ?></td>
+                        <td><?php echo $_POST["imc6"] ; ?></td>
+                        <td><?php echo $_POST["imc7"] ; ?></td>
+                        <td><?php echo $_POST["imc8"] ; ?></td>
+                        <td><?php echo $_POST["imc9"] ; ?></td>
                     </tr>
 
                 </tbody>
@@ -546,17 +554,17 @@
             <table>
                     <thead>
                         <tr>
-                            <td style="text-align: center; width: 15%;"><strong>Etapes</strong></td>
-                            <td style="text-align: center; width: 10%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 9%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 9%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 9%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 15%;"><strong>Commentaire</strong></td>
+                            <td style="text-align: center; width: 15%;">Etapes</td>
+                            <td style="text-align: center; width: 10%;">Date</td>
+                            <td style="text-align: center; width: 10%;">Date</td>
+                            <td style="text-align: center; width: 10%;">Date</td>
+                            <td style="text-align: center; width: 10%;">Date</td>
+                            <td style="text-align: center; width: 15%;">Commentaire</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Installation de la pile</strong></td>
+                            <td>Installation de la pile</td>
                             <td><?php echo $_POST["pmpdate1"] ; ?></td>
                             <td><?php echo $_POST["pmpdate2"] ; ?></td>
                             <td><?php echo $_POST["pmpdate3"] ; ?></td>
@@ -566,7 +574,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Marche/Arrêt</strong></td>
+                            <td>Marche/Arrêt</td>
                             <td><?php echo $_POST["pmpdate5"] ; ?></td>
                             <td><?php echo $_POST["pmpdate6"] ; ?></td>
                             <td><?php echo $_POST["pmpdate7"] ; ?></td>
@@ -576,7 +584,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Réglage Date/heure</strong></td>
+                            <td>Réglage Date/heure</td>
                             <td><?php echo $_POST["pmpdate9"] ; ?></td>
                             <td><?php echo $_POST["pmpdate10"] ; ?></td>
                             <td><?php echo $_POST["pmpdate11"] ; ?></td>
@@ -586,7 +594,7 @@
                             </td>
                         </tr> 
                         <tr>
-                            <td><strong>Réglage du bolus</strong></td>
+                            <td>Réglage du bolus</td>
                             <td><?php echo $_POST["pmpdate13"] ; ?></td>
                             <td><?php echo $_POST["pmpdate14"] ; ?></td>
                             <td><?php echo $_POST["pmpdate15"] ; ?></td>
@@ -596,7 +604,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Arrêt du bolus en cours</strong></td>
+                            <td>Arrêt du bolus en cours</td>
                             <td><?php echo $_POST["pmpdate17"] ; ?></td>
                             <td><?php echo $_POST["pmpdate18"] ; ?></td>
                             <td><?php echo $_POST["pmpdate19"] ; ?></td>
@@ -606,7 +614,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Historique des bolus</strong></td>
+                            <td>Historique des bolus</td>
                             <td><?php echo $_POST["pmpdate21"] ; ?></td>
                             <td><?php echo $_POST["pmpdate22"] ; ?></td>
                             <td><?php echo $_POST["pmpdate23"] ; ?></td>
@@ -616,7 +624,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Programmation du débit basal</strong></td>
+                            <td>Programmation du débit basal</td>
                             <td><?php echo $_POST["pmpdate25"] ; ?></td>
                             <td><?php echo $_POST["pmpdate26"] ; ?></td>
                             <td><?php echo $_POST["pmpdate27"] ; ?></td>
@@ -626,7 +634,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Consulter les débits de base</strong></td>
+                            <td>Consulter les débits de base</td>
                             <td><?php echo $_POST["pmpdate29"] ; ?></td>
                             <td><?php echo $_POST["pmpdate291"] ; ?></td>
                             <td><?php echo $_POST["pmpdate292"] ; ?></td>
@@ -636,7 +644,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Programmer et arrêter le débit de base temporaire</strong></td>
+                            <td>Programmer et arrêter le débit de base temporaire</td>
                             <td><?php echo $_POST["pmpdate294"] ; ?></td>
                             <td><?php echo $_POST["pmpdate295"] ; ?></td>
                             <td><?php echo $_POST["pmpdate296"] ; ?></td>
@@ -657,17 +665,17 @@
             <table>
                     <thead>
                         <tr>
-                            <td style="text-align: center; width: 25%;"><strong>Etapes</strong></td>
-                            <td style="text-align: center; width: 14%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 14%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 14%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 14%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 15%;"><strong>Commentaire</strong></td>
+                            <td style="text-align: center; width: 25%;">Etapes</td>
+                            <td style="text-align: center; width: 14%;">Date</td>
+                            <td style="text-align: center; width: 14%;">Date</td>
+                            <td style="text-align: center; width: 14%;">Date</td>
+                            <td style="text-align: center; width: 14%;">Date</td>
+                            <td style="text-align: center; width: 20%;">Commentaire</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Reconnaitre une alarme</strong></td>
+                            <td>Reconnaitre une alarme</td>
                             <td><?php echo $_POST["alarmedate1"] ; ?></td>
                             <td><?php echo $_POST["alarmedate2"] ; ?></td>
                             <td><?php echo $_POST["alarmedate3"] ; ?></td>
@@ -677,7 +685,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Pile faible</strong></td>
+                            <td>Pile faible</td>
                             <td><?php echo $_POST["alarmedate5"] ; ?></td>
                             <td><?php echo $_POST["alarmedate6"] ; ?></td>
                             <td><?php echo $_POST["alarmedate7"] ; ?></td>
@@ -687,7 +695,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Pile épuisée</strong></td>
+                            <td>Pile épuisée</td>
                             <td><?php echo $_POST["alarmedate9"] ; ?></td>
                             <td><?php echo $_POST["alarmedate10"] ; ?></td>
                             <td><?php echo $_POST["alarmedate11"] ; ?></td>
@@ -697,7 +705,7 @@
                             </td>
                         </tr> 
                         <tr>
-                            <td><strong>Réservoire vide</strong></td>
+                            <td>Réservoire vide</td>
                             <td><?php echo $_POST["alarmedate13"] ; ?></td>
                             <td><?php echo $_POST["alarmedate14"] ; ?></td>
                             <td><?php echo $_POST["alarmedate15"] ; ?></td>
@@ -707,7 +715,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Occlusion/pas d'injection</strong></td>
+                            <td>Occlusion/pas d'injection</td>
                             <td><?php echo $_POST["alarmedate17"] ; ?></td>
                             <td><?php echo $_POST["alarmedate18"] ; ?></td>
                             <td><?php echo $_POST["alarmedate19"] ; ?></td>
@@ -717,7 +725,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Historique des alarmes</strong></td>
+                            <td>Historique des alarmes</td>
                             <td><?php echo $_POST["alarmedate21"] ; ?></td>
                             <td><?php echo $_POST["alarmedate22"] ; ?></td>
                             <td><?php echo $_POST["alarmedate23"] ; ?></td>
@@ -727,7 +735,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Entretien de la pompe</strong></td>
+                            <td>Entretien de la pompe</td>
                             <td><?php echo $_POST["alarmedate25"] ; ?></td>
                             <td><?php echo $_POST["alarmedate26"] ; ?></td>
                             <td><?php echo $_POST["alarmedate27"] ; ?></td>
@@ -747,17 +755,17 @@
             <table>
                     <thead>
                         <tr>
-                            <td style="text-align: center; width: 25%;"><strong>Etapes</strong></td>
-                            <td style="text-align: center; width: 14%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 14%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 13%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 13%;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 15%;"><strong>Commentaire</strong></td>
+                            <td style="text-align: center; width: 25%;">Etapes</td>
+                            <td style="text-align: center; width: 14%;">Date</td>
+                            <td style="text-align: center; width: 14%;">Date</td>
+                            <td style="text-align: center; width: 14%;">Date</td>
+                            <td style="text-align: center; width: 14%;">Date</td>
+                            <td style="text-align: center; width: 20%;">Commentaire</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Lavage des mains</strong></td>
+                            <td>Lavage des mains</td>
                             <td><?php echo $_POST["manipdate1"] ; ?></td>
                             <td><?php echo $_POST["manipdate2"] ; ?></td>
                             <td><?php echo $_POST["manipdate3"] ; ?></td>
@@ -767,7 +775,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Remplissage du réservoir</strong></td>
+                            <td>Remplissage du réservoir</td>
                             <td><?php echo $_POST["manipdate5"] ; ?></td>
                             <td><?php echo $_POST["manipdate6"] ; ?></td>
                             <td><?php echo $_POST["manipdate7"] ; ?></td>
@@ -777,7 +785,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Connexion réservoir/tubulaire</strong></td>
+                            <td>Connexion réservoir/tubulaire</td>
                             <td><?php echo $_POST["manipdate9"] ; ?></td>
                             <td><?php echo $_POST["manipdate10"] ; ?></td>
                             <td><?php echo $_POST["manipdate11"] ; ?></td>
@@ -787,7 +795,7 @@
                             </td>
                         </tr> 
                         <tr>
-                            <td><strong>Retour du piston</strong></td>
+                            <td>Retour du piston</td>
                             <td><?php echo $_POST["manipdate13"] ; ?></td>
                             <td><?php echo $_POST["manipdate14"] ; ?></td>
                             <td><?php echo $_POST["manipdate15"] ; ?></td>
@@ -797,7 +805,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Purge de la tubulure</strong></td>
+                            <td>Purge de la tubulure</td>
                             <td><?php echo $_POST["manipdate17"] ; ?></td>
                             <td><?php echo $_POST["manipdate18"] ; ?></td>
                             <td><?php echo $_POST["manipdate19"] ; ?></td>
@@ -818,12 +826,12 @@
         <table>
                     
                         <tr>
-                            <td style="text-align: center; "><strong>Etapes</strong></td>
-                            <td style="text-align: center; width: 60px;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 60px;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 60px;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 60px;"><strong>Date</strong></td>
-                            <td style="text-align: center; width: 100px;"><strong>Commentaire</strong></td>
+                            <td style="text-align: center;"><strong>Etapes</strong></td>
+                            <td style="text-align: center;"><strong>Date</strong></td>
+                            <td style="text-align: center;"><strong>Date</strong></td>
+                            <td style="text-align: center;"><strong>Date</strong></td>
+                            <td style="text-align: center;"><strong>Date</strong></td>
+                            <td style="text-align: center;"><strong>Commentaire</strong></td>
                         </tr>
                     
                     <tbody>
@@ -925,9 +933,9 @@
                 <table>
                     
                         <tr>
-                            <td style="text-align: center; width: 400px;"></td>
-                            <td style="text-align: center; width: 80px;">OUI / NON</td>
-                            <td style="text-align: center; width: 190px;"><strong>Observation</strong></td>                            
+                            <td style="text-align: center;"></td>
+                            <td style="text-align: center;">OUI / NON</td>
+                            <td style="text-align: center;"><strong>Observation</strong></td>                            
                         </tr>
                     
                     
@@ -1005,9 +1013,9 @@
                 <table>
                     
                         <tr>
-                            <td style="width: 400px;"></td>
-                            <td style="text-align: center; width: 130px;"><strong>Détails</strong></td>
-                            <td style="text-align: center; width: 140px;"><strong>Observations</strong></td>                            
+                            <td></td>
+                            <td style="text-align: center;"><strong>Détails</strong></td>
+                            <td style="text-align: center;"><strong>Observations</strong></td>                            
                         </tr>
                     
                     <tbody>                      
@@ -1040,9 +1048,9 @@
                 <table>
                    
                         <tr>
-                            <td style="text-align: center; width: 400px;"></td>
-                            <td style="text-align: center; width: 130px;"><strong>Prescription</strong></td>
-                            <td style="text-align: center; width: 140px;"><strong>Réalisation réelle</strong></td>                            
+                            <td style="text-align: center;"></td>
+                            <td style="text-align: center;"><strong>Prescription</strong></td>
+                            <td style="text-align: center;"><strong>Réalisation réelle</strong></td>                            
                         </tr>
                    
                     <tbody>                      
